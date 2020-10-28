@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rey's Football</title>
+    <!--Import Google Icon & Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!-- My CSS & Icon -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="./assets/logo-Rey.webp">
+    <link rel="apple-touch-icon" href="./icon192x192.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="description" content="Website mengenai tentang sepak bola liga Spanyol.">
+    <meta name="theme-color" content="#E67D2F">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="brand-logo"><img src="./assets/logo-Rey.webp"></a>
+                <a href="#" class="sidenav-trigger" data-target="nav-mobile" onclick="goBack()">
+                    <i class="material-icons">arrow_back</i>
+                </a>
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav blue-grey darken-4" id="nav-mobile"></ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <div class="container" id="squad"></div>
+
+    <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        // Load data
+        document.addEventListener("DOMContentLoaded", function () {
+            getTeamById()
+        })
+    </script>
+</body>
+
+</html>

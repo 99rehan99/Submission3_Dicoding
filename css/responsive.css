@@ -1,0 +1,39 @@
+@media screen and (min-device-width: 320px) and (max-device-width: 330px) {
+    .card {
+        margin-bottom: 4.5rem !important;
+    }
+
+    #background {
+        content: url("../assets/home2.webp");
+    }
+}
+
+@media screen and (min-device-width: 331px) and (max-device-width: 376px) {
+    .card {
+        margin-bottom: 3rem !important;
+    }
+
+    #background {
+        content: url("../assets/home2.webp");
+    }
+}
+
+@media screen and (min-device-width: 331px) and (max-device-width: 430px) {
+    .card {
+        margin-bottom: 2.5rem !important;
+    }
+
+    #background {
+        content: url("../assets/home1.webp");
+    }
+}
+
+@media screen and (min-device-width: 431px) and (max-device-width: 770px) {
+    .card {
+        margin-bottom: 2.5rem !important;
+    }
+}
+
+@media screen and (min-device-width: 771px) and (max-device-width: 990px) {}
+
+@media screen and (min-device-width: 991px) and (max-device-width: 1025px) {}

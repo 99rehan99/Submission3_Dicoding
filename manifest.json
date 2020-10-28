@@ -1,0 +1,20 @@
+{
+    "name": "Rey's Football",
+    "short_name": "Football La Liga",
+    "description": "Website mengenai tentang sepak bola liga Spanyol.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#313439",
+    "theme_color": "#313439",
+    "gcm_sender_id": "366516602170",
+    "icons": [{
+        "src": "icon512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }, {
+        "src": "icon192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+    }]
+}
